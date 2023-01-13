@@ -1,3 +1,11 @@
 #!/bin/bash
-g++ cppWrapper.cpp -o cppWrapper
-./cppWrapper
+if ! docker info > /dev/null 2>&1; then
+    echo "Docker is not running. Starting it..."
+    open --background -a Docker
+    while ! docker info > /dev/null 2>&1; do
+        sleep 1
+    done
+fi
+docker-compose down
+docker-compose build
+docker-compose up -d
