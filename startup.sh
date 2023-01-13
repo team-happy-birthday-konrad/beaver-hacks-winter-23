@@ -9,7 +9,7 @@ fi
 
 
 cd backend
-npm test & # run the server in the background
+npm start & # run the server in the background
 # cd into frontend directory and run the frontend
 cd ../frontend
 npm start
