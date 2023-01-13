@@ -19,7 +19,6 @@ yarn
 cp .env.example .env
 ```
 
-
 ## Local Development
 
 To run frontend locally:

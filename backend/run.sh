@@ -9,3 +9,5 @@ fi
 docker-compose down
 docker-compose build
 docker-compose up -d
+echo ''
+echo 'Running backend on http://localhost:4040/api/users'
