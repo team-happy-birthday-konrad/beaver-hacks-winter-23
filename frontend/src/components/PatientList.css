@@ -20,6 +20,17 @@
     font-size: 14px;
 }
 
+#Patients tbody tr:hover {
+    background-color: #e6f2ff;
+    transition: background-color 0.5s ease;
+}
+
+#Patients tbody tr:hover td {
+    color: #0077be;
+    /* font-weight: 700; */
+    transition: color 0.5s ease, font-weight 0.5s ease;
+}
+
 #Patients th, td {
     border: 1px solid #ccc;
     padding: 8px;
