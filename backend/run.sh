@@ -6,7 +6,7 @@ if ! docker info > /dev/null 2>&1; then
         sleep 1
     done
 fi
-docker-compose down
+docker-compose down --remove-orphans
 docker-compose build
 docker-compose up -d
 echo ''
