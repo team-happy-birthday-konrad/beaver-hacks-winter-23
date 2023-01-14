@@ -1,3 +1,3 @@
 #!/bin/bash
 g++ main.cpp -o main
-./main
+cat data.csv | ./main
