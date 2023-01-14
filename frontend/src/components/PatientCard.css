@@ -1,0 +1,25 @@
+.patient-card {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.patient-card td {
+    padding: 10px;
+}
+
+.patient-card button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-size: 16px;
+}

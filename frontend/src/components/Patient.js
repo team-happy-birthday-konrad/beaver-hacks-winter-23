@@ -1,5 +1,6 @@
 import React from 'react';
 import { MdDeleteForever, MdEdit } from 'react-icons/md';
+import './PatientCard.css'; // Import CSS file
 
 function Patient({ patient, onEdit, onDelete }) {
     console.log(patient);
@@ -17,7 +18,7 @@ function Patient({ patient, onEdit, onDelete }) {
 
 
     return (
-        <tr>
+        <tr className="patient-card">
             <td>{name}</td>
             <td>{age}</td>
             <td>{weight}</td>            
