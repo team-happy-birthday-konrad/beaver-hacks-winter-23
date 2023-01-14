@@ -18,19 +18,17 @@ function App() {
   const [patient] = useState([]);
   return (
     <>
-    <nav>
-      <ul>
+    <div className="header-container">
+      <ul className="header-tabs">
         <li>
-          <Link to="/">FrontPage</Link>
+          <Link to="/" className="tab-link">FrontPage</Link>
         </li>
         <li>
-          <Link to="/Doctor">Doctor</Link>
-          </li>
-
+          <Link to="/Doctor" className="tab-link">Doctor</Link>
+        </li>
       </ul>
-    </nav>
-    
-      <Routes>
+    </div>
+    <Routes>
         <Route path="/" element={<FrontPage />} />
         <Route path="/Doctor" element={<DoctorHomePage/>} >
           <Route path="./doctorhomepage/add-patient" element={<DoctorAddPatientPage />} />
