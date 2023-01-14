@@ -1,10 +1,37 @@
 //import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import {useForm} from "react-hook-form";
+//import {useForm} from "react-hook-form";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
+import Navigation from './components/navigation';
+//import DoctorHomePage from './pages/DoctorHomePage';
+import DoctorAddPatientPage from './pages/DoctorAddPatientPage';
+import DoctorEditPatientPage from './pages/DoctorEditPatientPage';
+import FrontPage from './pages/FrontPage';
 //import validator from 'validator';
 
 function App() {
+  const [patient] = useState([]);
+
+  return (
+    <BrowserRouter>
+    <Routes>
+
+       <Route path ="/" element={<Navigation/>} />
+        <Route path="/" element={<FrontPage/>} />
+        
+        <Route path="/" element={<DoctorAddPatientPage/>}/>
+    
+        <Route path="/" element={<DoctorEditPatientPage/>}/>
+          <DoctorEditPatientPage patient={patient} />
+        </Route>      
+    </Routes>
+      </BrowserRouter>
+  );
+}
+
+  /*
   const { register, handleSubmit } = useForm();
   function onSubmit(data) {
     console.log(data);
@@ -63,7 +90,7 @@ const styles = {
   },
 };
 
-
+*/
 export default App;
 
 
