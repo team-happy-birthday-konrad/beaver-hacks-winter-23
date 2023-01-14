@@ -9,8 +9,8 @@ import { useState } from 'react';
 import DoctorAddPatientPage from './pages/DoctorAddPatientPage';
 import DoctorEditPatientPage from './pages/DoctorEditPatientPage';
 import FrontPage from './pages/FrontPage';
-import SearchPatientPage from './pages/SearchPatientPage';
-//import DoctorHomePage from './pages/DoctorHomePage';
+//import SearchPatientPage from './pages/SearchPatientPage';
+import DoctorHomePage from './pages/DoctorHomePage';
 //import SearchBar from '.components/SearchPatient';
 //import validator from 'validator';
 
@@ -32,7 +32,7 @@ function App() {
     
       <Routes>
         <Route path="/" element={<FrontPage />} />
-        <Route path="/Doctor" element={<SearchPatientPage/>} >
+        <Route path="/Doctor" element={<DoctorHomePage/>} >
           <Route path="./doctorhomepage/add-patient" element={<DoctorAddPatientPage />} />
           <Route path="./doctorhomepage/edit-patient/:id" element={<DoctorEditPatientPage patient={patient} />} />
         </Route>

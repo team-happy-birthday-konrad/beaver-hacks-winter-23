@@ -1,4 +1,4 @@
-[{
+{"patients" : [{
     "name": "Nancy Le",
     "age": 20,
     "weight": 50,
@@ -37,5 +37,6 @@
     "height": 160,
     "data": "02-22-2021",
     "diagnosis": "Xanax for ADHD"
+}]
 }
-]
+
