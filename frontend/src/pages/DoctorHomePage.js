@@ -2,7 +2,7 @@ import React from 'react';
 import PatientList from '../components/PatientList';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import './DoctorHomePage.css';
 
 
 function DoctorHomePage({ setPatient }) {
@@ -92,7 +92,9 @@ function DoctorHomePage({ setPatient }) {
     return (
         <>
             <article>
-                <h2>Current Patients</h2>
+                <div class='header-container'>
+                    <h2>Current Patients</h2>
+                </div>
                 <PatientList 
                     patients={data.patients} 
                     onEdit={onEdit} 
