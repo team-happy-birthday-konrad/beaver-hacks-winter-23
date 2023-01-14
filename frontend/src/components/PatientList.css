@@ -4,24 +4,34 @@
     font-weight: 600;
     text-align: left;
     padding: 10px;
-  }
-  
-  .caption-styling {
+}
+
+.caption-styling {
     font-size: 18px;
     font-weight: 600;
     color: #444;
     text-align: left;
-  }
-  
-  #Patients {
+}
+
+#Patients {
     width: 100%;
     border-collapse: collapse;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-  }
-  
-  #Patients th, td {
+}
+
+#Patients th, td {
     border: 1px solid #ccc;
     padding: 8px;
-  }
-  
+}
+
+.table-container {
+    width: 66%;
+    margin: 0 auto; /* center the container */
+}
+
+@media only screen and (max-width: 600px) {
+    .table-container {
+        width: 94%; /* adjust the width for mobile */
+    }
+}
