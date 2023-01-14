@@ -1,11 +1,12 @@
 import React from 'react';
 import Patient from './Patient';
+import './PatientList.css';
 
 function PatientList({ patients, onDelete, onEdit }) {
     return (
         <table id="Patients">
-            <caption>You can add/edit patients here</caption>
-            <thead>
+            <caption className="caption-styling">You can add/edit patients here</caption>
+            <thead className="table-header-styling">
                 <tr>
                     <th>Name</th>
                     <th>Age</th>
