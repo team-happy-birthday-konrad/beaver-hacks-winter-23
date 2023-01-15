@@ -75,7 +75,7 @@ export default function Patient({ patient, onEdit, onDelete }) {
                 <MdEdit onClick={() => onEdit(patient)} /></td>
                 <td>
                     <a href ="#" onClick={()=> handleClick(patient)}>
-                        More details
+                        Link
                     </a>
                 </td>
         </tr> 
