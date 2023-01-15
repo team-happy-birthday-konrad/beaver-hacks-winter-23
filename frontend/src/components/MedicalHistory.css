@@ -1,45 +1,114 @@
 .medical-history-container {
-    margin: 0 auto;
-}
-
-.medical-history-entries {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.medical-history-entry {
-    width: 100%;
-    margin: 10px 0;
-    padding: 20px;
-    border: 1px solid gray;
-    border-radius: 10px;
-    box-shadow: 3px 3px 3px gray;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    }
-    
-    .medical-history-entry .date {
-    width: 20%;
-    font-weight: bold;
-    margin-right: 10px;
-    }
-    
-    .medical-history-entry .doctor-name {
-    width: 20%;
-    margin-right: 10px;
-    }
-    
-    .medical-history-entry .department {
-    width: 20%;
-    margin-right: 10px;
-    }
-    
-    .medical-history-entry .diagnosis {
-    width: 30%;
-    margin-right: 10px;
-    }
-    
-    .medical-history-entry .medications {
-    width: 10%;
-    }
+    justify-content: center;
+}
+
+.medical-history-entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+        border: 1px solid lightgray;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        }
+        
+        .date {
+        width: 30%;
+        }
+        
+        .doctor-name {
+        width: 20%;
+        text-align: center;
+        }
+        
+        .department {
+        width: 20%;
+        text-align: center;
+        }
+        
+        .diagnosis {
+        width: 15%;
+        text-align: center;
+        }
+        
+        .medications {
+        width: 15%;
+        text-align: center;
+        }
+        
+        .medical-history-label {
+        font-size: 10px;
+        font-style: italic;
+        color: #7f7f7f;
+        margin-bottom: 5px;
+        }
+        
+        .medical-history-label::before {
+        content: "Date:";
+        }
+        
+        .medical-history-entry::before {
+        display:block;
+        content: attr(data-label);
+        font-size: 12px;
+        font-style: italic;
+        color: #7f7f7f;
+        margin-bottom: 5px;
+        }
+        
+        
+        .date {
+            width: 33.33%;
+            font-size: small;
+            font-style: italic;
+            color: #87CEEB;
+            }
+            
+            .doctor-name {
+            width: 33.33%;
+            font-size: small;
+            font-style: italic;
+            color: #87CEEB;
+            text-align: center;
+            }
+            
+            .department {
+            width: 33.33%;
+            font-size: small;
+            font-style: italic;
+            color: #87CEEB;
+            text-align: center;
+            }
+            
+            .diagnosis {
+            width: 33.33%;
+            font-size: small;
+            font-style: italic;
+            color: #87CEEB;
+            text-align: center;
+            }
+            
+            .medications {
+            width: 33.33%;
+            font-size: small;
+            font-style: italic;
+            color: #87CEEB;
+            text-align: center;
+            }
+
+            .medical-history-container .medical-history-entry .label {
+                color: lightblue;
+                }
+                
+                .medical-history-container .medical-history-entry .content {
+                color: black;
+                }
