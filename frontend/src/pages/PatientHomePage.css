@@ -1,74 +1,53 @@
 .patient-home-page {
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .patient-home-page h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    
-  }
-  
-  .patient-home-page h2 {
-    margin-bottom: 10px;
-  }
-  
-  .patient-home-page p {
-    margin-bottom: 10px;
-  }
-  
-  .patient-home-page .error {
-    color: red;
-  }
-  
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
 
-  .patient-home-page {
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .patient-home-page h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .patient-home-page h2 {
-    margin-bottom: 10px;
-  }
-  
-  .patient-home-page p {
-    margin-bottom: 10px;
-  }
-  
-  .patient-home-page input {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 10px;
-    width: 100%;
-  }
-  
-  .patient-home-page button {
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    background-color: lightblue;
-    color: white;
-    margin-right: 10px;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-  }
-  .patient-home-page {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  
+.patient-home-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.patient-home-page h2 {
+  margin-bottom: 10px;
+}
+
+.patient-home-page p {
+  margin-bottom: 10px;
+}
+
+.patient-home-page .error {
+  color: red;
+}
+
+.patient-home-page input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.patient-home-page button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: lightblue;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.patient-home-page {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
 .patient-details-container {
   display: flex;
   width: 100%;
@@ -77,31 +56,33 @@
 
 .card {
   width: 100%;
-  padding: 1rem;
+  padding: 20px;
   border: 1px solid gray;
-  border-radius: 0.5rem;
+  border-radius: 10px;
   box-shadow: 3px 3px 3px gray;
 }
 
 .patient-details {
-  /* width: 45%; */
-  /* margin: 1rem 0; */
+  width: 45%;
+  margin: 1rem 0;
   padding: 1rem;
 }
 
 .patient-history {
-  /* width: 45%; */
+  width: 45%;
+  margin: 1rem 0;
   padding: 1rem;
 }
 
 .upload-section {
   width: 100%;
+  margin: 1rem 0;
   padding: 1rem;
   text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
   .patient-details, .patient-history {
-    width: 100%;
+      width: 100%;
   }
 }
