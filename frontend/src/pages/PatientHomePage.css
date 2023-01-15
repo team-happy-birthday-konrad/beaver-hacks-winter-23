@@ -23,3 +23,42 @@
     color: red;
   }
   
+
+  .patient-home-page {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .patient-home-page h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .patient-home-page h2 {
+    margin-bottom: 10px;
+  }
+  
+  .patient-home-page p {
+    margin-bottom: 10px;
+  }
+  
+  .patient-home-page input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .patient-home-page button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: lightblue;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
