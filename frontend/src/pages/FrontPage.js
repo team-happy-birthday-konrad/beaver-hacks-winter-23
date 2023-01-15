@@ -7,13 +7,11 @@ import React from 'react';
 function FrontPage() {
     return (
         <>
-            <h2> Patient Database</h2>
-    
-       
+            <h2> Welcome to our record system</h2>
+            
         </>
     );
 }
-
 
 
 export default FrontPage;
