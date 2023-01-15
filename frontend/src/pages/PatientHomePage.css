@@ -86,3 +86,7 @@
       width: 100%;
   }
 }
+
+.app-logo {
+  padding-left: 6%; /* Adds 5% padding to the right side of the image */
+}

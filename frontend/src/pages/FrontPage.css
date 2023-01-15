@@ -56,3 +56,9 @@
     form input[type="email"], form input[type="password"] {
     width: 100%;
     }
+
+    /* .app-logo {
+        width: 90%; /* Width of the image is set to 90% to crop off 10% from the right */
+        /* overflow: hidden; This will hide the portion of the image that exceeds the 90% width */
+    
+    
