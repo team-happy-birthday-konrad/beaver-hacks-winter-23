@@ -23,3 +23,15 @@
     float: right;
     font-size: 16px;
 }
+
+table {
+    table-layout: fixed;  /* ensures that all columns fill the row */
+    width: 100%;
+  }
+  
+  th, td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
