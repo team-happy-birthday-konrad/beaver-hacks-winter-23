@@ -1,4 +1,4 @@
-patient_dataconst Promise = require('bluebird');
+const Promise = require('bluebird');
 const mongoose = require('mongoose');
 const httpStatus = require('http-status');
 const APIError = require('../helpers/APIError');
@@ -7,10 +7,10 @@ const APIError = require('../helpers/APIError');
  * Patient_Datum Schema
  */
 const Patient_DatumSchema = new mongoose.Schema({
-  date_array {
-     type: Date[]
+  date_array: {
+     type: Date[],
      required: true
-  }
+  },
   patient_datum: {
      type: String[],
      required: true
