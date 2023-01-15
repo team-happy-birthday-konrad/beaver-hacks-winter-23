@@ -7,7 +7,9 @@
     "height": 170,
     "birthdate": "01-11-2004",
     "visit_date": "01-11-2022",
-    "diagnosis": "Need to take more multivitamin"
+    "diagnosis": "Need to take more multivitamin",
+    "email": null,
+    "phone": "+17 (712) 888-7237"
 },
 
 {
@@ -19,7 +21,9 @@
     "height": 180,
     "birthdate": "07-31-1959",
     "visit_date": "07-31-2019",
-    "diagnosis": "Collapsed colon. Needs xray and pain med"
+    "diagnosis": "Collapsed colon. Needs xray and pain med",
+    "email": null,
+    "phone": null
 },
 
 
@@ -32,7 +36,9 @@
     "height": 177,
     "birthdate": "03-06-1997",
     "visit_date": "03-06-2021",
-    "diagnosis": "Increase dosage for mouse allergy"
+    "diagnosis": "Increase dosage for mouse allergy",
+    "email": null,
+    "phone": "+17 (123) 534-1222"
 },
 
 {
@@ -44,7 +50,9 @@
     "height": 160,
     "birthdate": "02-22-1956",
     "visit_date": "02-22-2021",
-    "diagnosis": "Xanax for ADHD"
+    "diagnosis": "Xanax for ADHD",
+    "email": null,
+    "phone": "+544 (162) 123-5533"
 }]
 }
 
