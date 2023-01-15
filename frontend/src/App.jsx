@@ -8,6 +8,7 @@ import { useState } from 'react';
 //import DoctorHomePage from './pages/DoctorHomePage';
 import DoctorAddPatientPage from './pages/DoctorAddPatientPage';
 import DoctorEditPatientPage from './pages/DoctorEditPatientPage';
+import RecordMedicalHistoryPage from './pages/RecordMedicalHistoryPage';
 import FrontPage from './pages/FrontPage';
 import PatientDetails from './pages/PatientDetails';
 //import SearchPatientPage from './pages/SearchPatientPage';
@@ -42,7 +43,7 @@ function App() {
         <Route path="/Doctor/add-patient" element={<DoctorAddPatientPage />} />
         <Route path="/Doctor/edit-patient/:id" element={<DoctorEditPatientPage patient={patient} />} />
         <Route path="/Doctor/:id" element={<PatientDetails />} />
-
+        <Route path="/Doctor/record-medical-history-entry" element={<RecordMedicalHistoryPage />} />
         <Route path="*" element={<NotFoundPage/>} />
       </Routes>
     </>

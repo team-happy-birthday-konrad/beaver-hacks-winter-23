@@ -1,0 +1,95 @@
+.record-medical-history-page {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .record-medical-history-page h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    }
+    
+    .record-medical-history-page h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    }
+    
+    .record-medical-history-page p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    }
+    
+    .record-medical-history-page select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+    }
+    
+    .record-medical-history-page input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+    }
+    
+    .record-medical-history-page button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: lightblue;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    }
+    
+    .record-medical-history-page .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .record-medical-history-page .form-container label {
+    font-size: 0.8rem;
+    color: lightblue;
+    font-style: italic;
+    }
+    
+    .record-medical-history-page .form-container .medications {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    .record-medical-history-page .form-container .medications input {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    }
+    
+    .record-medical-history-page .confirm-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+    }
+    
+    /* Modal Content/Box */
+    .record-medical-history-page .confirm-modal .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    border: 1px solid #888;
+    width: 80%; 
+    }

@@ -2,6 +2,7 @@ import React from 'react';
 import PatientList from '../components/PatientList';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './DoctorHomePage.css';
 
 
@@ -59,18 +60,23 @@ function DoctorHomePage({ setPatient }) {
     // DISPLAY the patient
     return (
         <>
-            <article>
-                <div className='header-container'>
-                    <h2>Current Patients</h2>
-                </div>
-                <PatientList 
-                    patients={patients} 
-                    onEdit={onEditPatient} 
-                    onDelete={onDeletePatient} 
-                />
-            </article>
+        <div className="row">
+        <div className="col-md-6">
+        <Link to="./record-medical-history-entry" className="btn btn-primary">Record Medical History Entry</Link>
+        </div>
+        <div className="col-md-6">
+        <div className='header-container'>
+        <h2>Current Patients</h2>
+        </div>
+        <PatientList 
+                             patients={patients} 
+                             onEdit={onEditPatient} 
+                             onDelete={onDeletePatient} 
+                         />
+        </div>
+        </div>
         </>
-    );
+        );
 }
 
 export default DoctorHomePage;

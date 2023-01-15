@@ -1,0 +1,44 @@
+{
+    "patients": [
+    {
+    "id": "1",
+    "name": "John Doe",
+    "birthdate": "1990-01-01",
+    "gender": "Male",
+    "email": "johndoe@email.com",
+    "phone": "555-555-5555"
+    },
+    {
+    "id": "2",
+    "name": "Jane Smith",
+    "birthdate": "1995-03-20",
+    "gender": "Female",
+    "email": "janesmith@email.com",
+    "phone": "555-555-5556"
+    },
+    {
+    "id": "3",
+    "name": "Bob Johnson",
+    "birthdate": "1985-05-10",
+    "gender": "Male",
+    "email": "bobjohnson@email.com",
+    "phone": "555-555-5557"
+    },
+    {
+    "id": "4",
+    "name": "Emily Davis",
+    "birthdate": "1987-07-12",
+    "gender": "Female",
+    "email": "emilydavis@email.com",
+    "phone": "555-555-5558"
+    },
+    {
+    "id": "5",
+    "name": "Michael Brown",
+    "birthdate": "1992-09-14",
+    "gender": "Male",
+    "email": "michaelbrown@email.com",
+    "phone": "555-555-5559"
+    }
+    ]
+    }
