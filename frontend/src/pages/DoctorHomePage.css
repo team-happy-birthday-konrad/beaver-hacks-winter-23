@@ -161,3 +161,8 @@
             }
         }
         
+.padLeft {
+    margin-top: 200px;
+    /* display in the center */
+    margin-left: 340px;
+}

@@ -67,7 +67,9 @@ function DoctorHomePage({ setPatient }) {
                 onDelete={onDeletePatient} 
                          />
         <div class="mt-6">
-        <Link to="./record-medical-history-entry" className="btn btn-primary">Record Medical History Entry</Link>
+        <p></p>
+        <p></p>
+        <Link to="./record-medical-history-entry" className="btn btn-primary padLeft">Record Medical History Entry</Link>
         </div>
         </div>
         </div>
