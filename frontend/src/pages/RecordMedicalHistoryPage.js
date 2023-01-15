@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { Modal } from 'react-bootstrap';
 import './RecordMedicalHistoryPage.css';
+import { useNavigate } from 'react-router-dom';
 
 function RecordMedicalHistoryPage() {
     const [currentDoctor, setCurrentDoctor] = useState('');
@@ -11,6 +12,7 @@ function RecordMedicalHistoryPage() {
     const [diagnosis, setDiagnosis] = useState('');
     const [medications, setMedications] = useState([]);
     const [showModal, setShowModal] = useState(false);
+    const history = useNavigate();
 
     useEffect(() => {
         // fetch current doctor data
@@ -67,6 +69,7 @@ function RecordMedicalHistoryPage() {
 
     const handleCancel = () => {
         setShowModal(false);
+        history('/Doctor');
     };
 
     return (
@@ -100,6 +103,8 @@ function RecordMedicalHistoryPage() {
 </label>
 <br/>
 <input type="submit" value="Submit"/>
+<button type='button' onClick={handleCancel}>Cancel</button>
+
 </form>
 {showModal && (
 <div className="confirmation-modal">

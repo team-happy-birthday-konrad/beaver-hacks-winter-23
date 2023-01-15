@@ -93,3 +93,19 @@
     border: 1px solid #888;
     width: 80%; 
     }
+
+    .record-medical-history-page button {
+        width: 100px;
+        height: 30px;
+        margin-left: 5px;
+        float: right;
+      }
+      
+      .record-medical-history-page button[type='submit'] {
+        background-color: #00bfff;
+      }
+      
+      .record-medical-history-page button[type='button'] {
+        background-color: gray;
+      }
+      
