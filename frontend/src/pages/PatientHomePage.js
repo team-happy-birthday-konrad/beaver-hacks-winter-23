@@ -108,6 +108,12 @@ const mockPatient = mockPatientData.patients[0];
                         value={updatedPatient.phone}
                         onChange={handleChange}
                     />
+                    <input
+                        type="date"
+                        name="age"
+                        value={updatedPatient.birthdate}
+                        onChange={handleChange}
+                    />
                     <button onClick={handleUpdate}>Update Patient Details</button>
                     <button onClick={() => setEditing(false)}>Cancel</button>
                     </>
