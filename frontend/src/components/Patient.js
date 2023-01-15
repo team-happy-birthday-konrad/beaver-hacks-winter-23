@@ -14,7 +14,7 @@ function Patient({ patient, onEdit, onDelete }) {
     const history = useNavigate();
 
     const handleClick = () => {
-        console.log('newwwww', patient);
+        console.log('Patient was clicked', patient);
 
         history(`/patient-details/${patient._id}`);
     }
