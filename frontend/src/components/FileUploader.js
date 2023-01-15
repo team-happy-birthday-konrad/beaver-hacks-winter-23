@@ -25,7 +25,26 @@ function FileUploader() {
     // handle file upload here
     const formData = new FormData();
     formData.append('file', file);
-    fetch('/api/upload', {
+
+    // get the .env variable for the backend url
+    const backendHost = process.env.REACT_APP_BACKEND_URL;
+    const backendPort = process.env.REACT_APP_BACKEND_PORT;
+    
+    const backendUrl = backendHost + ':' + backendPort + '/api/';
+    console.log(backendUrl);
+
+    // check to make sure the backend url is running
+    fetch(backendUrl + 'users')
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+
+
+    fetch(backendUrl + 'patientData/upload', {
       method: 'POST',
       body: formData
     })

@@ -84,6 +84,7 @@ const mockPatient = mockPatientData.patients[0];
           <h1>Patient Home Page</h1>
           
           <div className="patient-details-container">
+                <div>
                 <div className="card">
                     <div className="patient-details">
                         <h2>Contact Details</h2>
@@ -122,6 +123,15 @@ const mockPatient = mockPatientData.patients[0];
                     </div>
                 </div>
 
+                <div className="card">
+                    <div className="upload-section">
+                        <h2>Upload Medical Records</h2>
+                        <FileUploader />
+                    </div>
+                </div>
+
+                </div>
+
 
                 <div className="card">
                     <div className="patient-history">
@@ -133,12 +143,7 @@ const mockPatient = mockPatientData.patients[0];
 
 
           </div>
-                <div className="card">
-                    <div className="upload-section">
-                        <h2>Upload Medical Records</h2>
-                        <FileUploader />
-                    </div>
-                </div>
+                
 
         </div>
       );
