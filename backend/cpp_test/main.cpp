@@ -11,7 +11,9 @@ using namespace std;
 using namespace jsoncons;
 using namespace jsoncons::csv;
 
-// Source: answer on https://stackoverflow.com/questions/25217349/how-to-convert-csv-file-to-json-using-c
+// Code adapted from answer here: https://stackoverflow.com/a/25217457
+// CC BY-SA 4.0, license information here: https://creativecommons.org/licenses/by-sa/3.0/
+// Per sharealike, this file is licensed under the same license.
 
 int main(int argc, char** argv)
 {
