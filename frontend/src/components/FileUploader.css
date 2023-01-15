@@ -1,0 +1,46 @@
+.file-uploader {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .file-uploader:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .file-uploader input[type="file"] {
+    background: linear-gradient(to bottom, #fff, #f3f3f3);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .file-uploader input[type="file"]:hover {
+    background: linear-gradient(to bottom, #f3f3f3, #fff);
+    transform: translateY(-2px);
+  }
+  
+  .file-uploader button[type="submit"] {
+    background: linear-gradient(to bottom, #2196f3, #1e88e5);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .file-uploader button[type="submit"]:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .file-uploader .error {
+    color: red;
+  }
+  

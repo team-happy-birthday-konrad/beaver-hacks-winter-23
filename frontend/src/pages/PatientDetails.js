@@ -1,8 +1,15 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
+
+console.log('PatientDetails file');
 
 const PatientDetails = ({ match }) => {
     // for now, we'll just use the hardcoded data located in components/PatientData.json
     const data = require('../components/PatientData.json');
+    const { state } = useLocation();
+    console.log('PatientDetails file');
+
+    console.log(state);
 
 
     const patient = data.patients.find(patient => patient._id === match.params.id);
