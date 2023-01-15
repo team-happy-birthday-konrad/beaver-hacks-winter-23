@@ -82,43 +82,65 @@ const mockPatient = mockPatientData.patients[0];
     return (
         <div className='patient-home-page'>
           <h1>Patient Home Page</h1>
-          <h2>Contact Details</h2>
-          {editing ? (
-            <>
-              <input
-                type="text"
-                name="name"
-                value={updatedPatient.name}
-                onChange={handleChange}
-              />
-              <input
-                type="text"
-                name="email"
-                value={updatedPatient.email}
-                onChange={handleChange}
-              />
-              <input
-                type="text"
-                name="phone"
-                value={updatedPatient.phone}
-                onChange={handleChange}
-              />
-              <button onClick={handleUpdate}>Update Patient Details</button>
-              <button onClick={() => setEditing(false)}>Cancel</button>
-            </>
-          ) : (
-            <>
-              <p>Name: {orNA(name)}</p>
-              <p>Email: {orNA(email)}</p>
-              <p>Phone: {orNA(phone)}</p>
-              <p>Age: {orNA(age)}</p>
-              <button onClick={handleEdit}>Edit Contact Details</button>
-            </>
-          )}
-            <h2>Medical History</h2>
-            <p>Diagnosis: {orNA(patient.diagnosis)}</p>
-            <p>Medications: {orNA(patient.medications)}</p>
-          <FileUploader />
+          
+          <div className="patient-details-container">
+                <div className="card">
+                    <div className="patient-details">
+                        <h2>Contact Details</h2>
+                        {editing ? (
+                    <>
+                    <input
+                        type="text"
+                        name="name"
+                        value={updatedPatient.name}
+                        onChange={handleChange}
+                    />
+                    <input
+                        type="text"
+                        name="email"
+                        value={updatedPatient.email}
+                        onChange={handleChange}
+                    />
+                    <input
+                        type="text"
+                        name="phone"
+                        value={updatedPatient.phone}
+                        onChange={handleChange}
+                    />
+                    <button onClick={handleUpdate}>Update Patient Details</button>
+                    <button onClick={() => setEditing(false)}>Cancel</button>
+                    </>
+                            ) : (
+                            <>
+                            <p>Name: {orNA(name)}</p>
+                            <p>Email: {orNA(email)}</p>
+                            <p>Phone: {orNA(phone)}</p>
+                            <p>Age: {orNA(age)}</p>
+                            <button onClick={handleEdit}>Edit Contact Details</button>
+                            </>
+                        )}
+                    </div>
+                </div>
+
+
+                <div className="card">
+                    <div className="patient-history">
+                        <h2>Medical History</h2>
+                        <p>Diagnosis: {orNA(patient.diagnosis)}</p>
+                        <p>Medications: {orNA(patient.medications)}</p>
+                    </div>
+                </div>
+
+
+
+          </div>
+                <div className="card">
+                    <div className="upload-section">
+                        <h2>Upload Medical Records</h2>
+                        <FileUploader />
+                    </div>
+                </div>
+
         </div>
       );
     

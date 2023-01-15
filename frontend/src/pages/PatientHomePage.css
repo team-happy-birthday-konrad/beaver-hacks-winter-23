@@ -62,3 +62,45 @@
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
   }
+  .patient-home-page {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.patient-details-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.card {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 3px gray;
+}
+
+.patient-details {
+  width: 45%;
+  padding: 1rem;
+}
+
+.patient-history {
+  width: 45%;
+  padding: 1rem;
+}
+
+.upload-section {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .patient-details, .patient-history {
+    width: 100%;
+  }
+}
