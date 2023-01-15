@@ -22,6 +22,7 @@ function get(req, res) {
 
 /**
  * Create new patient_datum
+ * @property {string} req.body.dates
  * @property {string} req.body.active_energy
  * @property {string} req.body.exerc_time
  * @property {string} req.body.sleep_wrist_temp
@@ -132,6 +133,7 @@ function get(req, res) {
  */
 function create(req, res, next) {
   const patient_datum = new Patient_Datum({
+    dates: req.body.dates,
     active_energy: req.body.active_energy,
     exerc_time: req.body.exerc_time,
     sleep_wrist_temp: req.body.sleep_wrist_temp,
@@ -247,6 +249,7 @@ function create(req, res, next) {
 
 /**
  * Update existing patient_datum
+ * @property {string} req.body.dates
  * @property {string} req.body.active_energy
  * @property {string} req.body.exerc_time
  * @property {string} req.body.sleep_wrist_temp
@@ -357,6 +360,7 @@ function create(req, res, next) {
  */
 function update(req, res, next) {
   const patient_datum = req.patient_datum;
+  patient_datum.dates: req.body.dates;
   patient_datum.active_energy: req.body.active_energy;
   patient_datum.exerc_time: req.body.exerc_time;
   patient_datum.sleep_wrist_temp: req.body.sleep_wrist_temp;
