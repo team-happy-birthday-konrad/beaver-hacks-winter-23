@@ -67,25 +67,66 @@
   margin: 1rem 0;
   padding: 1rem;
 }
-
 .patient-history {
-  width: 45%;
-  margin: 1rem 0;
-  padding: 1rem;
-}
-
-.upload-section {
-  width: 100%;
-  margin: 1rem 0;
-  padding: 1rem;
-  text-align: center;
-}
-
-@media only screen and (max-width: 600px) {
-  .patient-details, .patient-history {
-      width: 100%;
+  font-size: 14px;
+  line-height: 1.2;
+  padding: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   }
-}
+  
+  .patient-history h2 {
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+  }
+  
+  .patient-history p {
+  margin: 0;
+  }
+  
+  .patient-history .history-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  }
+  
+  .patient-history .history-entry p {
+  flex: 1;
+  margin: 0;
+  padding-right: 0.5rem;
+  }
+  
+  .patient-history .history-entry p:last-of-type {
+  text-align: right;
+  }
+  
+  .patient-history .history-entry p.date {
+  width: 10%;
+  }
+  
+  .patient-history .history-entry p.doctor {
+  width: 15%;
+  }
+  
+  .patient-history .history-entry p.department {
+  width: 15%;
+  }
+  
+  .patient-history .history-entry p.diagnosis {
+  width: 30%;
+  }
+  
+  .patient-history .history-entry p.medications {
+  width: 30%;
+  }
+  
+  @media only screen and (max-width: 600px) {
+  .patient-history .history-entry p {
+  font-size: 12px;
+  }
+  }
 
 .app-logo {
   padding-left: 5%; /* Adds 5% padding to the right side of the image */

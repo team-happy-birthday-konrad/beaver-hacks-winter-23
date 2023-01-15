@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect, useLocation } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './PatientHomePage.css';
-
+import MedicalHistory from '../components/MedicalHistory';
 import FileUploader from '../components/FileUploader';
 console.log('hery ')
 
@@ -126,8 +126,7 @@ const mockPatient = mockPatientData.patients[0];
                 <div className="card">
                     <div className="patient-history">
                         <h2>Medical History</h2>
-                        <p>Diagnosis: {orNA(patient.diagnosis)}</p>
-                        <p>Medications: {orNA(patient.medications)}</p>
+                        <MedicalHistory medicalHistory={patient.medicalHistory} />
                     </div>
                 </div>
 

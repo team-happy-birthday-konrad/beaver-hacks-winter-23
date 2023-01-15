@@ -1,0 +1,116 @@
+{
+    "records": [
+        {
+            "date": "01/01/2021",
+            "doctorName": "Dr. John Smith",
+            "department": "Cardiology",
+            "diagnosis": "Hypertension",
+            "medications": "Amlodipine, Losartan"
+        },
+        {
+            "date": "01/15/2021",
+            "doctorName": "Dr. Jane Doe",
+            "department": "Dermatology",
+            "diagnosis": "Eczema",
+            "medications": "Hydrocortisone Cream"
+        },
+        {
+            "date": "02/01/2021",
+            "doctorName": "Dr. John Smith",
+            "department": "Cardiology",
+            "diagnosis": "Hypertension",
+            "medications": "Amlodipine, Losartan"
+        },
+        {
+            "date": "03/01/2021",
+            "doctorName": "Dr. Michael Johnson",
+            "department": "Gastroenterology",
+            "diagnosis": "Gastritis",
+            "medications": "Omeprazole"
+        },
+        {
+            "date": "03/15/2021",
+            "doctorName": "Dr. Jane Doe",
+            "department": "Dermatology",
+            "diagnosis": "Eczema",
+            "medications": "Hydrocortisone Cream"
+        },
+        {
+            "date": "04/01/2021",
+            "doctorName": "Dr. John Smith",
+            "department": "Cardiology",
+            "diagnosis": "Hypertension",
+            "medications": "Amlodipine, Losartan"
+            },
+            {
+            "date": "05/01/2021",
+            "doctorName": "Dr. David Brown",
+            "department": "Orthopedics",
+            "diagnosis": "Arthritis",
+            "medications": "Ibuprofen, Acetaminophen"
+            },
+            {
+            "date": "05/15/2021",
+            "doctorName": "Dr. Jane Doe",
+            "department": "Dermatology",
+            "diagnosis": "Eczema",
+            "medications": "Hydrocortisone Cream"
+            },
+            {
+            "date": "06/01/2021",
+            "doctorName": "Dr. John Smith",
+            "department": "Cardiology",
+            "diagnosis": "Hypertension",
+            "medications": "Amlodipine, Losartan"
+            },
+            {
+            "date": "07/01/2021",
+            "doctorName": "Dr. Michael Johnson",
+            "department": "Gastroenterology",
+            "diagnosis": "Gastritis",
+            "medications": "Omeprazole"
+            },
+            {
+            "date": "08/01/2021",
+            "doctorName": "Dr. David Brown",
+            "department": "Orthopedics",
+            "diagnosis": "Arthritis",
+            "medications": "Ibuprofen, Acetaminophen"
+            },
+            {
+            "date": "09/01/2021",
+            "doctorName": "Dr. Jane Doe",
+            "department": "Dermatology",
+            "diagnosis": "Acne",
+            "medications": "Benzoyl Peroxide Cream"
+            },
+            {
+            "date": "10/01/2021",
+            "doctorName": "Dr. John Smith",
+            "department": "Cardiology",
+            "diagnosis": "Hypertension",
+            "medications": "Amlodipine, Losartan"
+            },
+            {
+            "date": "11/01/2021",
+            "doctorName": "Dr. Michael Johnson",
+            "department": "Gastroenterology",
+            "diagnosis": "Irritable Bowel Syndrome",
+            "medications": "Dicyclomine"
+            },
+            {
+            "date": "12/01/2021",
+            "doctorName": "Dr. David Brown",
+            "department": "Orthopedics",
+            "diagnosis": "Back pain",
+            "medications": "Naproxen"
+            },
+            {
+            "date": "01/01/2022",
+            "doctorName": "Dr. Jane Doe",
+            "department": "Dermatology",
+            "diagnosis": "Psoriasis",
+            "medications": "Methotrexate"
+            }
+            ]
+            }

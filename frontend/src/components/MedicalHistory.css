@@ -1,0 +1,45 @@
+.medical-history-container {
+    margin: 0 auto;
+}
+
+.medical-history-entries {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.medical-history-entry {
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px gray;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    }
+    
+    .medical-history-entry .date {
+    width: 20%;
+    font-weight: bold;
+    margin-right: 10px;
+    }
+    
+    .medical-history-entry .doctor-name {
+    width: 20%;
+    margin-right: 10px;
+    }
+    
+    .medical-history-entry .department {
+    width: 20%;
+    margin-right: 10px;
+    }
+    
+    .medical-history-entry .diagnosis {
+    width: 30%;
+    margin-right: 10px;
+    }
+    
+    .medical-history-entry .medications {
+    width: 10%;
+    }
