@@ -2,7 +2,7 @@ import React from 'react';
 //import {MdRestaurant, MdShoppingCart, MdFoodBank} from 'react-icons/md';
 //import {BiDrink} from 'react-icons/bi';
 //import {SiFoodpanda} from 'react-icons/si';
-import logo from './initial_w_trans.png';
+import logo from './initialcrop_w_trans.png';
 
 import './FrontPage.css';
 
@@ -10,7 +10,7 @@ import './FrontPage.css';
 function FrontPage() {
     return (
         <div className="landing-page">
-            <img src={logo} alt='B++MedicEHR' className='app-logo'/>
+            <img src={logo} alt='B++MedicEHR'/>
             <h2 className="welcome-message">Welcome to our electronic medical record system</h2>
             <div className="form-container">
                 <h3 className="form-header">Doctor Sign In</h3>
