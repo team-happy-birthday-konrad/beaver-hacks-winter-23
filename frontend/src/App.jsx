@@ -13,6 +13,7 @@ import PatientDetails from './pages/PatientDetails';
 //import SearchPatientPage from './pages/SearchPatientPage';
 import DoctorHomePage from './pages/DoctorHomePage';
 import PatientHomePage from './pages/PatientHomePage';
+import NotFoundPage from './pages/NotFoundPage';
 //import SearchBar from '.components/SearchPatient';
 //import validator from 'validator';
 
@@ -37,11 +38,12 @@ function App() {
     <Routes>
         <Route path="/" element={<FrontPage />} />
         <Route path="/Patient" element={<PatientHomePage />} />
-        <Route path="/Doctor" element={<DoctorHomePage/>} >
-          <Route path="./doctorhomepage/add-patient" element={<DoctorAddPatientPage />} />
-          <Route path="./doctorhomepage/edit-patient/:id" element={<DoctorEditPatientPage patient={patient} />} />
-          <Route path="./doctorhomepage/patient-details/:id" element={<PatientDetails patient={patient} />} />
-        </Route>
+        <Route path="/Doctor" element={<DoctorHomePage/>} />
+        <Route path="/Doctor/add-patient" element={<DoctorAddPatientPage />} />
+        <Route path="/Doctor/edit-patient/:id" element={<DoctorEditPatientPage patient={patient} />} />
+        <Route path="/Doctor/:id" element={<PatientDetails />} />
+
+        <Route path="*" element={<NotFoundPage/>} />
       </Routes>
     </>
   );

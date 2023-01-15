@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "msedge",
+            "name": "http://localhost:3000/patient-details/5f9f5b5b5b5b5b5b5b5b5b5b",
+            "request": "launch",
+            "url": "http://localhost:3000/patient-details/5f9f5b5b5b5b5b5b5b5b5b5b"
+        }
+    ]
+}

@@ -1,11 +1,12 @@
 import React from 'react';
 import { MdDeleteForever, MdEdit } from 'react-icons/md';
 import './PatientCard.css'; // Import CSS file
+//import {useParams} from "react-router-dom"
 
 import { useNavigate } from 'react-router-dom';
 
 function Patient({ patient, onEdit, onDelete }) {
-
+    //const {id} = useParams();
     const name = patient.name || 'N/A';
     const age = patient.age || 'N/A';
     const weight = patient.weight || 'N/A';

@@ -34,10 +34,10 @@ export const DoctorEditPatientPage = ({ patient }) => {
 
         if (response.status === 200) {
             alert("Successfully edit patient!");
-            history.push("/");
+            history("/");
         } else {
             const errMessage = await response.json();
-            history.push("/");
+            history("/");
             alert(`Failed to update patient. Status ${response.status}. ${errMessage.Error}`);
         }
     }
