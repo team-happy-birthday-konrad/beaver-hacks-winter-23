@@ -4,20 +4,13 @@ import './PatientList.css';
 
 function PatientList({ patients, onDelete, onEdit }) {
     return (
+
         <div className="table-container">
+
             <table id="Patients">
                 <caption className="caption-styling">You can add/edit patients here</caption>
-                <thead className="table-header-styling">
-                    <tr>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Weight</th>
-                        <th>Height</th>
-                        <th>Date</th>
-                        <th>Diagnosis</th>
-                        <th>Delete</th>
-                        <th>Edit</th>
-                    </tr>
+                <thead className="table-header">
+
                 </thead>
                 <tbody>
                     {patients.map((patient, i) => 

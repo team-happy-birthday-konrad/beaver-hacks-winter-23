@@ -69,9 +69,9 @@ function DoctorHomePage({ setPatient }) {
         <h2>Current Patients</h2>
         </div>
         <PatientList 
-                             patients={patients} 
-                             onEdit={onEditPatient} 
-                             onDelete={onDeletePatient} 
+                patients={patients} 
+                onEdit={onEditPatient} 
+                onDelete={onDeletePatient} 
                          />
         </div>
         </div>
