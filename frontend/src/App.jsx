@@ -28,7 +28,7 @@ function App() {
           <Link to="/" className="tab-link">Home</Link>
         </li>
         <li>
-          <Link to="/Doctor" className="tab-link">Doctor View</Link>
+          <Link to="/Doctor" className="tab-link">Staff View</Link>
         </li>
         <li>
           <Link to="/Patient" className="tab-link">Patient View</Link>

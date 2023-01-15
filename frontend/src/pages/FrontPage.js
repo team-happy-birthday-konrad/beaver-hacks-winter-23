@@ -38,7 +38,7 @@ function FrontPage() {
                     </label>
                     <button type="submit">Sign In</button>
                 </form>
-                
+
 </div>
 </div>
 );
