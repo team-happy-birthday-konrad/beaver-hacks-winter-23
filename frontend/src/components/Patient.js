@@ -54,7 +54,8 @@ function Patient({ patient, onEdit, onDelete }) {
             <td><MdEdit onClick={() => onEdit(patient)} /></td>
         </tr>
 
-        <Modal show={showModal} onHide={handleModalClose}>
+        <div >
+        <Modal className="patient-modal" show={showModal} onHide={handleModalClose}>
         <Modal.Header closeButton>
           <Modal.Title>Patient Information</Modal.Title>
         </Modal.Header>
@@ -74,6 +75,7 @@ function Patient({ patient, onEdit, onDelete }) {
           </button>
         </Modal.Footer>
       </Modal>
+      </div>
       </div>
     );
 }
