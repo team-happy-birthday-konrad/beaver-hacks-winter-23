@@ -114,3 +114,50 @@
         background-color: lightblue;
         color: white;
         }        
+
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .col-md-6 {
+            width: 45%;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px gray;
+            background-color: #f5f5f5;
+        }
+        
+        .header-container {
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        .header-container h2 {
+            margin-bottom: 1rem;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: lightblue;
+            color: white;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .btn:hover {
+            transform: scale(1.1);
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .col-md-6 {
+                width: 100%;
+            }
+        }
+        

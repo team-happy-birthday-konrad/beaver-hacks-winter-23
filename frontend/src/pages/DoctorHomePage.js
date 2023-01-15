@@ -12,8 +12,6 @@ function DoctorHomePage({ setPatient }) {
 
     const mockPatientData = require('../components/PatientData.json');
 
-    console.log('woooww', mockPatientData.patients);
-
     // Use state to bring in the data
     const [patients, setPatients] = useState([]);
 
@@ -52,27 +50,25 @@ function DoctorHomePage({ setPatient }) {
         }
     }
 
-     //LOAD the patient
-    /*useEffect(() => {
-        loadPatients();
-    }, []);*/
-
     // DISPLAY the patient
     return (
         <>
         <div className="row">
-        <div className="col-md-6">
-        <Link to="./record-medical-history-entry" className="btn btn-primary">Record Medical History Entry</Link>
-        </div>
-        <div className="col-md-6">
+        
+        <div className="col-md-12">
+        <p></p>
         <div className='header-container'>
         <h2>Current Patients</h2>
         </div>
+        <p></p>
         <PatientList 
                 patients={patients} 
                 onEdit={onEditPatient} 
                 onDelete={onDeletePatient} 
                          />
+        <div class="mt-6">
+        <Link to="./record-medical-history-entry" className="btn btn-primary">Record Medical History Entry</Link>
+        </div>
         </div>
         </div>
         </>
